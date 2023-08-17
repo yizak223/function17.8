@@ -57,9 +57,177 @@
         function GetSUM2(num1,num2) {
             return (+prompt())+(+prompt());
         }
-       
+       //11
+       function GetName() {
+        return prompt('enter name')
+       }
+       function GetAge() {
+            return +prompt('enter age')
+       }
+       function GetNameAndAge(GetName,GetAge) {
+           return console.log("your name"+GetName()+"your age"+GetAge());
             
-        
+       }
+        //12
+        function GetNum() 
+        {
+            return +prompt('enter number')
+        }
+        function GetSBiggest() {
+            var num =GetNum();
+            var min=num;
+            var max=num; 
+            num =GetNum();
+                if(num>max){
+                max=num;
+                }
+                if(num<min){
+                min=num;
+                }
+            return max;
+        }
+        //13
+        function GetSUM(GetNum,GetNum) {
+            return GetNum()+GetNum()    
+        }
+        //14
+        function GetSumOfTheSfarot(num=+prompt('t')) {
+            var sum=0;
+            for(var i=1;i<=num;i++)
+            {
+                sum=sum+i
+            }
+            return sum;
+        }
+        //15
+        function ChangeValues(num1,num2) {
+            return [num1,num2]=[num2,num1] 
+        }
+        //16
+        function Mesholash(num) {
+            for(var i=1;i<=num;i++){
+                console.log("*"+"      "+"*");
+                console.log("");
+            }
+            console.log("*");
+        }
+        //17
+        function GetHllow(){
+            for(var i=1;i<=5;i++){
+                console.log('hellow');
+            }
+        }
+        //18
+        function GetMin(num1,num2) {
+            var min=num1;
+            if(num2<min)
+            {
+                min=num2;
+            }
+            return min;
+        }
+        //19
+        function GetMinFromThree(num1,num2,num3) {
+            var min=num1;
+            if(num2<min)
+            {
+                min=num2;
+            }
+            if(num3<min)
+            {
+                min=num3;
+            }
+            return min;
+        }
+        //20
+        function GetAVG(num1,num2,num3) {
+            return (num1+num2+num3)/3;
+        }
+        //21
+        function GetSum3(num1,num2,num3,num4) {
+            return num1+num2+num3+num4;
+        }
+        //22
+        function GetExponet(base,expont) {
+            return base**expont;
+        }
+        //23
+        function GetSumDivid(num) {
+            var s=num.toString().length;
+            var sum=0;
+            for(var i=0;i<s;i++)
+            {
+                var l=num.toString();
+                console.log(l[i]);
+                sum=sum+(+l[i]);
+            }
+            return sum;
+            
+        }
+        //commit about how to make string
+        var num=12355;
+        var w=num.toString().length
+        console.log(w);
+        var num2=num.toString()
+        console.log(num2[0]);
+        var b=+num2[0];
+        console.log(b+0);
+        //24
+        function Fibunachi(num){
+            var a=0;
+            var b=1;
+            var c=0;
+            for(var i=0;i<=num;i++)
+            {               
+                c=a+b
+                console.log(b);
+                [a,b]=[b,c];
+            }
+        }
+        //25
+        function NUMatLINE() {
+            for(var i=1;i<=100;i++){
+                console.log(i);
+            }
+        }
+        //26
+        function GetText(text=prompt('text')) {
+            for(var i=1;i<=10;i++){
+                console.log(text);
+            }
+            
+        }
+        //27
+        function getNUMgetTEXT(num=+prompt('num')) {
+            if(num>10)
+            {
+                for(var i=1;i<=num;i++)
+                {
+                    console.log('hellow');
+                }
+                
+            }else{
+                return num;
+            }
+           
+        }
+        //28
+        function GETtextANnum(num=+prompt('num'),text=prompt('text')) {
+            for(var i=1;i<=num;i++){
+                console.log(text);
+            }
+        }
+        //29
+        function GetFIVEnumGETsum() {
+            var sum=0
+            for(var i=1;i<=5;i++)
+            {
+                var num=+prompt('num')
+                sum=sum+num;
+            }
+            return sum
+        }
+        //
     </script>
 </body>
 </html>
