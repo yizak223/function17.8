@@ -227,7 +227,179 @@
             }
             return sum
         }
-        //
+        //30
+        function zogi(){
+            var num=+prompt('numbr');
+            for( var i=2;i<=50;i++)
+            {
+                if(i%2==0)
+                {
+                    console.log(i);
+                }
+            }
+        }
+        //31
+        function IFzogiPRINT() {
+            num=+prompt('number')
+            if(num%2==0){
+                for( var i=2;i<=50;i++)
+            {
+                if(i%2==0)
+                {
+                    console.log(i);
+                }
+            }  
+        }
+        else
+            for( var i=1;i<=50;i=i+3)
+            {
+                console.log(i);
+            }
+        }
+        //32
+        function SharitOFnum() {
+            num=+prompt('num')
+            for(var i=1;i<=num;i++){
+                if(num%i==0){
+                    console.log(i);
+                }
+            }
+            
+        }
+        //33
+        function AZERT() {
+                num=+prompt('num');
+                var aztert=1;
+                for(var i=1;i<=num;i++)
+                {
+                    aztert=aztert*i;
+                }
+                return aztert;
+        }
+        //34
+        function DONTenterNAME() {
+                var text=prompt('text');
+                var name=prompt('name')
+                if (text!=name) {
+                    console.log(name);
+                }
+        }
+        //35
+        function GETnum() {
+            num=+prompt('num');
+            for(var i=1;i<=10;i=i)
+               {
+                if(num>10)
+                {
+                    console.log('yes');
+                }
+                else if(num<10)
+                {
+                    console.log('no');
+                    i++;
+                }else {
+                    console.log('equal');
+                }
+                num=+prompt('num');
+                }
+            }
+            //36
+            function  GetMINandMAX()
+            {
+                var num = +prompt ('num1')
+                var b=num;
+                var s=num;
+                for(var i=1;i<=5;i++)
+                {
+                    num =+prompt('num');
+                    if(num>b){
+                    b=num;
+                    }
+                    else if(num<s){
+                    s=num;
+                    }
+                    
+                }
+                return "the smallest: "+s+"the biggest: "+b;
+
+            }
+            //37
+            function GETnameNOstartA() {
+                var name = prompt('enter name');
+        
+                for(var FirstLetter=name.charAt(0);FirstLetter!='A';)
+                {
+                console.log(FirstLetter);
+                console.log(name);
+                name = prompt('enter name');
+                FirstLetter=name.charAt(0);
+                }
+            }
+            //38
+            function  GETnameNOstartAa() {
+                for (var i=1;i!=2;) 
+                {
+                var name = prompt('enter nam5e');
+                if(name[0]=='A'||name[0]=='a'){
+                    i=2;
+                }
+                else{
+                    console.log(name[0]);
+                    console.log(name);
+                }
+                }
+            }
+            //40
+            function GETnimMAXuntilZERO() {
+                var num =+prompt('num');
+                var b=num;
+                var s=num;
+                if(num<=0)
+                    {
+                        i=0;
+                    }
+                for(var i=1;i!=0;)
+                {
+                    num =+prompt('num');
+                    if(num<=0)
+                    {
+                        i=0
+                    }
+                    else
+                    { 
+                    if(num>b){
+                        b=num;
+                    }
+                    else if(num<s){
+                        s=num;
+                    }
+                    } 
+                }
+                return "the smallest: "+s +" the biggest"+b;
+            }
+            //41
+            function GETnumbersOFnum() {
+                var num = prompt('num');
+                var len =num.length
+                console.log("the length"+len);
+                for(var i=0;i<len;i++)
+                {
+                    console.log(num[i]);
+                }
+            }
+            //42
+            function LOAHhakefel() {
+                for(var i=1;i<10;i++)
+                {
+                    for(var j=1;j<10;j++)
+                    {
+                        console.log(i*j);
+                    }
+                    j=1;
+                }
+            }
+            //43
+            
     </script>
 </body>
 </html>
