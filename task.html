@@ -94,13 +94,31 @@
             return GetNum()+GetNum()    
         }
         //14
-        function GetSumOfTheSfarot(num=+prompt('t')) {
+        function GetSumOfTheSfarot(num=+prompt('enter num')) {
             var sum=0;
             for(var i=1;i<=num;i++)
             {
                 sum=sum+i
             }
             return sum;
+        }
+        function GetSumOfTheSfarot2(num=+prompt('enter num')) {
+            for(var i=0;i!=1;i=i)
+            {
+                if(num>=0)
+                {
+                    var sum=0;
+                    for(var i=1;i<=num;i++)
+                    {
+                        sum=sum+i
+                    }
+                return sum;
+                }
+                else{
+                alert('the number is need to be positive')
+                }
+                num=+prompt('enter num')
+            }  
         }
         //15
         function ChangeValues(num1,num2) {
