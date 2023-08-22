@@ -180,13 +180,20 @@
             var sum=0;
             for(var i=0;i<s;i++)
             {
-                var l=num.toString();
-                console.log(l[i]);
-                sum=sum+(+l[i]);
+                sum=sum+(+s[i]);
+            }
+            return sum;   
+        }
+        //with Math.floor
+        function sumOFsfarot(num) {
+            var sum=0;
+            while (num>0) {
+                sum=sum+num%10;
+                num=Math.floor(num/10)
             }
             return sum;
-            
         }
+        
         //commit about how to make string
         var num=12355;
         var w=num.toString().length
